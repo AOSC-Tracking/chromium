@@ -2,7 +2,7 @@
 
 ## Standard Operation Procedure
 
-1. Download a source archive of Chromium from <https://commondatastorage.googleapis.com/chromium-browser-official/>. Normally the URL is <https://commondatastorage.googleapis.com/chromium-browser-official/chromium-$VER.tar.xz>, replacing "$VER" with the version to be imported, like `128.0`.
+1. Download a source archive of Chromium from <https://commondatastorage.googleapis.com/chromium-browser-official/>. Normally the URL is <https://commondatastorage.googleapis.com/chromium-browser-official/chromium-$VER.tar.xz>, replacing "$VER" with the version to be imported, like `127.0.6533.88`.
 2. Switch to the `tarball` branch (`git checkout tarball`), then remove all files and directories in the working tree, including the hidden one, except the `.git` directory.
 3. Extract all files from the archive, then move all files and directories, including the hidden one, from the `chromium-$VER` directory to the working tree.
 4. Recursively remove `.gitattributes` files, `.gitignore` files, `.gitmodules` files and `.git` directories except the one in the top-level (`find . -name .gitattributes -delete; find . -name .gitignore -delete; find . -name .gitmodules -delete; find . -name .git`, note that `.git` directories have to be manually removed).
